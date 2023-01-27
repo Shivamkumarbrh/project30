@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/14d686e227.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="body1" >
+        <div class="insideBody">
+    <div class="msgNavbar">
+        <p>Send Mail</p>
+        <i class="fa-solid fa-xmark" onclick="close1()"></i>
+    </div>
+    <label for="to">To</label>
+    <input type="text" id="to">
+    <label for="from">From</label>
+    <input type="text" id="from">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject">
+    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="What'on your mind?"  ></textarea>
+    <div class="btn">
+        <button onclick="close1()">Cancel<i class="fa-solid fa-xmark"></i></button>
+        <button onclick="close1()">Send<i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+</div>
+</div>
+
+
+
+
+            
+            
+
+            
+            
+            <div class="container">
+
+                <div class="navbarMobile">
+                    <i class="fa-solid fa-bars" onclick="open2()"></i>
+                    <i class="fa-solid fa-pen" onclick="open1()"></i>
+                </div>
+
+        <div class="leftContainer">
+            <a href="#" id="left1">codEBYKumar</a>
+            <a href="#" id="left2" onclick="open1()">New Message<i class="fa-solid fa-pen"></i></a>
+            <a href="#" id="left3" onclick="b()" onmouseenter="move1()" onmouseleave="over1()"><i class="fa-solid fa-inbox"></i>Inbox</a>
+            <div class="anchor" id="list">
+                <div class="box" id="left5">
+                <a href="#" onclick="first()" >
+                    <div class="box1" >
+                        <img src="/img/man1.jpg" alt="">
+                        <p>Shivam</p>
+                    </div>
+                    <p>Subject: Remeber Me</p>
+                    <p>Hello, i just wanted to let you know that i'll be home at.....</p>
+                </div>
+                </a>
+                <div class="box" id="left6">
+                <a href="#" onclick="second()" >
+                    <div class="box1" >
+                        <img src="/img/man2.jpg" alt="">
+                        <p>Shivam</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, ex beatae quod officiis</p>
+                </div>
+                </a>
+                <div class="box" id="left7">
+                <a href="#"  onclick="third()">
+                    <div class="box1" >
+                        <img src="/img/man3.jpg" alt="">
+                        <p>Kumar</p>
+                    </div>
+                    <p>Welcome</p>
+                </div>
+                </a>
+            </div>
+                <div class="last">
+                    <a href="#"><i class="fa-solid fa-envelope"></i>Sent</a>
+                    <a href="#"><i class="fa-solid fa-hourglass-half"></i>Drafts</a>
+                    <a href="#"><i class="fa-solid fa-trash-can"></i>Trash</a>
+        </div>
+        </div>
+        <div class="rightContainer">
+            <div class="box2">
+            <div class="rightContent1">
+            <div class="img">
+                <img src="/img/man1.jpg" alt="">
+            </div>
+            <p>Subject: Remember Me</p>
+            <p> <i class="fa-regular fa-clock"></i> From Borge Refsnes, Sep 27, 2015.</p>
+            <button>Replay<i class="fa-solid fa-reply"></i></button>
+            <button>Forward<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="rightContent2">
+            <p class="rightContentpara">Hello, i just wanted to let you know that i'll be home at lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="rightContentpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p style="margin-top: 20px;">Best Regards, <br>Borge Refsnes </p>
+        </div>
+    </div>
+    <div class="box3">
+            <div class="rightContent1">
+            <div class="img">
+                <img src="/img/man2.jpg" alt="">
+            </div>
+            <p>Subject: Remember Me</p>
+            <p> <i class="fa-regular fa-clock"></i> From Borge Refsnes, Sep 27, 2015.</p>
+            <button>Replay<i class="fa-solid fa-reply"></i></button>
+            <button>Forward<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="rightContent2">
+            <p class="rightContentpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Forever yours,</p>
+            <p>Jane</p>
+        </div>
+    </div>
+    <div class="box4">
+            <div class="rightContent1">
+            <div class="img">
+                <img src="/img/man3.jpg" alt="">
+            </div>
+            <p>Subject: Remember Me</p>
+            <p> <i class="fa-regular fa-clock"></i> From Borge Refsnes, Sep 27, 2015.</p>
+            <button>Replay <i class="fa-solid fa-reply"></i></button>
+            <button>Forward <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="rightContent2">
+            <p class="rightContentpara">Welcome</p>
+            <p class="rightContentpara">That's it!</p>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+    <!-- forTablet -->
+
+    <div class="leftBody" onclick="close2()">
+        <div class="leftContainer1">
+            <a href="#" id="left1">codEBYKumar</a>
+            <a href="#" id="left0" onclick="close2()">Close <i class="fa-solid fa-xmark"></i> </a>
+        <a href="#" id="left2" onclick="open1()">New Message <i class="fa-solid fa-pen"></i></a>
+        <a href="#" id="left3" onclick="b()" onmouseenter="move1()" onmouseleave="over1()"><i class="fa-solid fa-inbox"></i> Inbox</a>
+        <div class="anchor" id="list">
+                    <div class="box" id="left5">
+                        <a href="#" onclick="first()" >
+                            <div class="box1" >
+                                <img src="/img/man1.jpg" alt="">
+                                <p>Shivam</p>
+                            </div>
+                            <p>Subject: Remeber Me</p>
+                            <p>Hello, i just wanted to let you know that i'll be home at.....</p>
+                        </div>
+                    </a>
+                    <div class="box" id="left6">
+                        <a href="#" onclick="second()" >
+                            <div class="box1" >
+                                <img src="/img/man2.jpg" alt="">
+                            <p>Shivam</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, ex beatae quod officiis</p>
+                    </div>
+                </a>
+                <div class="box" id="left7">
+                    <a href="#"  onclick="third()">
+                        <div class="box1" >
+                            <img src="/img/man3.jpg" alt="">
+                            <p>Kumar</p>
+                        </div>
+                        <p>Welcome</p>
+                    </div>
+                </a>
+            </div>
+                    <div class="last">
+                <a href="#"><i class="fa-solid fa-envelope"></i>Sent</a>
+                <a href="#"><i class="fa-solid fa-hourglass-half"></i>Drafts</a>
+                <a href="#"><i class="fa-solid fa-trash-can"></i>Trash</a>
+            </div>
+            </div>
+            </div>
+        
+            <!-- forTablet -->
+
+    <script src="script.js"></script>
+</body>
+</html>
