@@ -50,7 +50,6 @@ label{
     width: 100%;
     padding: 0px 12px;
     box-sizing: border-box;
-    margin-top: 10px;
 }
 input{
     padding: 10px 12px;
@@ -182,9 +181,19 @@ button i{
 }
 .box1 img{
     width: 50px;
+    animation-name: pic;
     height: 50px;
     border-radius: 5px;
+    
     object-fit: cover;
+}
+@keyframes pic {
+    0%{
+        top: -30px;
+    }
+    100%{
+        top: 0px;
+    }
 }
 .last a{
     color: black;
@@ -200,6 +209,8 @@ button i{
 .rightContent1 img{
     width: 20%;
     height: 50%;
+    position: relative;
+    animation: pic 0.4s;
     object-fit: cover;
     border-radius: 5px;
 }
