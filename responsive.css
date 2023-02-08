@@ -44,18 +44,19 @@
     }
     .leftBody{
         width: 100%;
-        position:absolute;
-        top: 0px;
         height: 100%;
+        position: fixed;
+        top: 0px;
         background-color: rgba(0, 0, 0, 0.4);
         box-sizing: border-box;
     }
     
     
     .leftContainer1{
+        display: block;
         width: 300px;
         height: 100%;
-        min-width: 200px;
+        overflow: auto;
         background-color: white;
         box-shadow: 0px 0px 5px #333;
         box-sizing: border-box;
@@ -80,6 +81,9 @@
     }
     #left3{
         color: white;
+        width: 100%;
+        margin: 0px;
+        text-align: left;
         background-color:rgb(222, 20, 20);
     }
     .container{

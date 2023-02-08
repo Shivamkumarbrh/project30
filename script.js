@@ -1,13 +1,13 @@
 
 document.querySelector('.box2').style.display = 'block';
 document.querySelector('.body1').style.display = 'none';
-document.querySelector('.anchor').style.display === 'block'
+document.querySelector('.anchor').style.display == 'block'
 const move1 = ()=>{
     document.getElementById('left3').style.backgroundColor = '#aaa';
     document.getElementById('left3').style.color = 'black';
 }
 const over1 = ()=>{
-    if(document.getElementById('left3').style.backgroundColor === 'rgb(222, 20, 20)'){
+    if(document.getElementById('left3').style.backgroundColor == 'rgb(222, 20, 20)'){
         document.getElementById('left3').style.backgroundColor = 'rgb(222, 20, 20)';
         document.getElementById('left3').style.color = 'white';
     }
@@ -17,16 +17,17 @@ const over1 = ()=>{
     }
 }
 let b = ()=>{
-    if(document.querySelector('.anchor').style.display === 'block'){
-        document.querySelector('.anchor').style.display = 'none'
-        document.getElementById('left3').style.backgroundColor = 'white';
-        document.querySelector('.leftContainer').style.overflowY = 'hidden'
-    }
-    else{
+    if(document.querySelector('.anchor').style.display == 'none'){
         document.querySelector('.anchor').style.display = 'block'
         document.getElementById('left3').style.backgroundColor = 'rgb(222, 20, 20)';
         document.getElementById('left3').style.color = 'white';
     document.querySelector('.leftContainer').style.overflowY = 'scroll'
+       
+    }
+    else{
+        document.querySelector('.anchor').style.display = 'none'
+        document.getElementById('left3').style.backgroundColor = 'white';
+        document.querySelector('.leftContainer').style.overflowY = 'hidden'
 }
 }
 let open1 = ()=>{
